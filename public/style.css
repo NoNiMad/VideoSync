@@ -1,0 +1,89 @@
+html, body
+{
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.center { text-align: center; }
+
+.panel
+{
+    padding: 5px;
+}
+
+.panel > div:not(.notflex)
+{
+    display: flex;
+    margin: 5px 0;
+}
+.panel > div:first-of-type, .panel > div:last-of-type { margin: 0; }
+
+hr
+{
+    border: none;
+    border-bottom: 1px solid #2980b9;
+}
+
+input[type="text"]
+{
+    width: 100%;
+    padding: 5px;
+
+    border-radius: 3px;
+    border: 1px solid #2980b9;
+}
+
+button
+{
+    width: 100%;
+    padding: 4px;
+    text-align: center;
+
+    border-radius: 3px;
+    border: 1px solid #2980b9;
+    background-color: #1f8dd6;
+
+    color: white;
+}
+
+.button-group button
+{
+    border-radius: 0;
+}
+.button-group button:first-of-type
+{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.button-group button:last-of-type
+{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+ul
+{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+ul li
+{
+    padding: 5px;
+    color: #2c3e50;
+}
+
+#video-container
+{
+    margin-top: 5px;
+}
+
+#joinedRoom
+{
+    text-align: right;
+    font-weight: bold;
+}

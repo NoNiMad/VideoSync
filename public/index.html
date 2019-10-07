@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="panel" data-name="app">
+        <div class="notflex">
+            Room <span id="joinedRoom"></span>
+        </div>
+        <hr/>
+        <div>
+            <ul id="members"></ul>
+        </div>
+        <div>
+            <input id="videoLink" type="text" placeholder="https://www.youtube.com/watch?v=" />
+        </div>
+        <div class="button-group">
+            <button id="load">Load</button>
+            <button id="leave">Leave</button>
+        </div>
+        <div id="video-container"></div>
+    </div>
+    <div class="panel" data-name="connect">
+        <div>
+            <input id="name" type="text" placeholder="Name"/>
+        </div>
+        <hr/>
+        <div>
+            <button id="createRoom">Create</button>
+        </div>
+        <div class="notflex center">- or -</div>
+        <div>
+            <input id="roomCode" class="center" type="text" placeholder="Room code"/>
+        </div>
+        <div>
+            <button id="joinRoom">Join</button>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="utils.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
